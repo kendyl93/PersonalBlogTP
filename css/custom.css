@@ -43,6 +43,10 @@ form button {
 /* end of 1st section */
 
 /* 2nd section */
+.social-media-container {
+  margin-top: 32px;
+}
+
 .page-section-subheading {
   font-size: 1.5rem;
   text-align: center;
