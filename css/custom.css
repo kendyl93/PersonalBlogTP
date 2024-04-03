@@ -72,6 +72,19 @@ form button {
   margin-bottom: 2rem;
 }
 
+.social-media-item .social-media-item-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+
+  @media screen and (min-width: 576px) {
+    gap: 32px;
+    flex-direction: row;
+  }
+}
+
 .social-media-item a {
   transition: all 0.1s ease-in;
 }
