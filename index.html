@@ -71,15 +71,21 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 col-xl-7">
             <!-- to get an API token!-->
-            <form id="subscribeForm">
+            <form
+              id="subscribeForm"
+              action="https://formspree.io/f/xpzvyedj"
+              method="POST"
+            >
               <!-- Name input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Enter your name..."
                   data-sb-validations="required"
+                  required
                 />
                 <label for="name">Full name</label>
                 <div class="invalid-feedback" data-sb-feedback="name:required">
@@ -91,9 +97,11 @@
                 <input
                   class="form-control"
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="name@example.com"
                   data-sb-validations="required,email"
+                  required
                 />
                 <label for="email">Email address</label>
                 <div class="invalid-feedback" data-sb-feedback="email:required">
@@ -128,7 +136,7 @@
               </div>
               <!-- Submit Button-->
               <button
-                class="btn btn-primary btn-xl disabled"
+                class="btn btn-primary btn-xl"
                 id="submitButton"
                 type="submit"
               >
@@ -362,6 +370,7 @@
                   type="text"
                   placeholder="Enter your name..."
                   data-sb-validations="required"
+                  required
                 />
                 <label for="name">Full name</label>
                 <div class="invalid-feedback" data-sb-feedback="name:required">
@@ -377,6 +386,7 @@
                   type="email"
                   placeholder="name@example.com"
                   data-sb-validations="required,email"
+                  required
                 />
                 <label for="email">Email address</label>
                 <div class="invalid-feedback" data-sb-feedback="email:required">
@@ -397,6 +407,7 @@
                   placeholder="Enter your message here..."
                   style="height: 10rem"
                   data-sb-validations="required"
+                  required
                 ></textarea>
                 <label for="message">Message</label>
                 <div
